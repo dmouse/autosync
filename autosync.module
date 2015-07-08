@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Contains autosync.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function autosync_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the autosync module.
+    case 'help.page.autosync':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('AutoSync your configuration') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function autosync_theme() {
+  $theme = [];
+
+  return $theme;
+}

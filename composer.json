@@ -1,0 +1,15 @@
+{
+    "name": "drupal/autosync",
+    "description": "Autosync your configurations",
+    "type": "drupal-module",
+    "require": {
+        "guzzlehttp/guzzle":"~6.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "dmouse",
+            "email": "dmousex@gmail.com"
+        }
+    ]
+}

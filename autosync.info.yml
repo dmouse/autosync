@@ -1,0 +1,7 @@
+name: autosync
+type: module
+description: AutoSync your configuration
+core: 8.x
+package: Config
+dependencies:
+  - composer_manager

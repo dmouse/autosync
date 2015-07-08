@@ -1,0 +1,16 @@
+autosync.config_controller_generateTar:
+  path: '/autosync/generateTar'
+  defaults:
+    _controller: '\Drupal\autosync\Controller\ConfigController::generateTar'
+    _title: 'autosync Title'
+  requirements:
+    _permission: 'access content'
+
+autosync.config_controller_applyConfig:
+  path: '/autosync/applyConfig'
+  defaults:
+    _controller: '\Drupal\autosync\Controller\ConfigController::applyConfig'
+    _title: 'autosync Title'
+  requirements:
+    _permission: 'access content'
+
