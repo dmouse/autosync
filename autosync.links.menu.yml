@@ -1,0 +1,5 @@
+autosync.send_config:
+  title: 'Send your configuration'
+  route_name: autosync.config_controller_generateTar
+  parent: system.admin
+  weight: 10

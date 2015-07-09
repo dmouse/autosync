@@ -83,9 +83,11 @@ class ConfigController extends ControllerBase implements ContainerInjectionInter
       }
     }
 
-    $key = "2aa523ce00648012c2a7afcd3da452109d470a34";
+    $config = $this->config('autosync.config_set_form_config');
+    $key = $config->get("token");
+
     $client = new \GuzzleHttp\Client();
-    $response = $client->post("http://configsets.dev/app_dev.php/save-config?key=$key", [
+    $response = $client->post("http://getconfig.co/save-config?key=$key", [
       'body' => [
         "file" => new PostFile('config-file',
           fopen(file_directory_temp() . '/config-autosync.tar.gz', 'r')

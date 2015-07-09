@@ -14,3 +14,10 @@ autosync.config_controller_applyConfig:
   requirements:
     _permission: 'access content'
 
+autosync.config_set_form:
+  path: '/admin/config/development/autosync/ConfigSetForm'
+  defaults:
+    _form: '\Drupal\autosync\Form\ConfigSetForm'
+    _title: 'ConfigSetForm'
+  requirements:
+    _permission: 'access administration pages'

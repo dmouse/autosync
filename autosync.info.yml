@@ -3,5 +3,6 @@ type: module
 description: AutoSync your configuration
 core: 8.x
 package: Config
+configure: autosync.config_set_form
 dependencies:
   - composer_manager
